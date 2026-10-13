@@ -1,0 +1,7 @@
+experiment,seed,graph,edges,best_epoch,val_pr_auc,test_pr_auc,test_roc_auc,notes
+MLP-first-run,unrecorded,none,0,2,0.4785,0.4542,0.8644,Original notebook run with uncontrolled RNG
+MLP-rerun,unrecorded,none,0,6,0.49298242963362665,0.40607414760126503,0.8431891227847528,Rerun showed high seed variability
+GraphSAGE-address,unrecorded,card1+addr1,6393246,3,0.4838,0.4538,0.8599,Original V1 notebook run
+GraphSAGE-device,42,card1+DeviceInfo,970760,8,0.49935618796739223,0.4656583669669161,0.8359860665452172,Device relation
+GraphSAGE-combined,42,union,7266146,4,0.49388104098239305,0.46695033520225987,0.8611672687512131,Deduplicated union
+XGBoost,42,none,0,,0.67232711373473,0.5407,0.8918,Best iteration 3596; trained up to 5000 rounds with 200 patience
